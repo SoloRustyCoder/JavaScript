@@ -13,7 +13,7 @@ function calculator(){
             alert(`Erro, opção inválida!`);
             calculator();
         }else{
-            function sum_operation(){
+            function sum(){
                 result = first_number + secound_number;
                 alert(`${first_number} + ${secound_number} = ${result}`);
             }
@@ -30,7 +30,7 @@ function calculator(){
         
             function real_div(){
                 result = first_number % secound_number;
-                alert(`${first_number} % ${secound_number} = ${result}`);
+                alert(`O resto de ${first_number} dividido por ${secound_number} é ${result}`);
             }
         
             function div(){
@@ -57,22 +57,22 @@ function calculator(){
         
             switch(OPERATION){
                 case 1:
-                    sum_operation();
+                    sum();
                     break;
                 case 2:
-                    sum_operation();
+                    sub();
                     break;
                 case 3:
-                    sum_operation();
+                    multiply();
                     break;
                 case 4:
-                    sum_operation();
+                    real_div();
                     break;
                 case 5:
-                    sum_operation();
+                    div();
                     break;
                 case 6:
-                    sum_operation();
+                    pot();
                     break;
             }
             new_operation();
